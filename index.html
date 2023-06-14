@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Menu Category Selection</title>
+  
+</head>
+
+<body>
+    <style>
+        body {
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 600px;
+  margin: 50px auto;
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  color: #333;
+  text-align: center;
+}
+
+select,
+select[size] {
+  display: block;
+  margin: 10px auto;
+  padding: 10px;
+  width: 100%;
+  font-size: 16px;
+  border-radius: 5px;
+}
+
+select[size] {
+  height: 120px;
+}
+
+    </style>
+  <div class="container">
+    <h1>Select a Menu Category:</h1>
+    <select id="categorySelect">
+      <option value="drinks">Drinks</option>
+      <option value="entrees">Entrees</option>
+      <option value="desserts">Desserts</option>
+    </select>
+    <select id="menuList" size="5"></select>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
